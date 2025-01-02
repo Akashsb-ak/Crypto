@@ -1,0 +1,290 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Crypto - Trusted Mining Platform</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+		<!-- CSS here -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <link rel="stylesheet" href="assets/css/default.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+    </head>
+    <body>
+
+        <!-- Preloader -->
+        <div id="preloader">
+            <div class="spinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+            </div>
+        </div>
+        <!-- Preloader -->
+
+		<!-- Scroll-top -->
+        <button class="scroll-top scroll-to-target" data-target="html">
+            <i class="fas fa-angle-up"></i>
+        </button>
+        <!-- Scroll-top-end-->
+
+        <!-- header-area -->
+        <header id="header">
+            <div id="sticky-header" class="menu-area transparent-header">
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="menu-wrap">
+                                <nav class="menu-nav">
+                                    <div class="logo">
+                                        <a href="index.html"><img src="assets/img/logo/logo.png" alt="Logo"></a>
+                                    </div>
+                                    <div class="navbar-wrap main-menu d-none d-lg-flex">
+                                        <ul class="navigation">
+                                            <li><a href="howtouse.html" class="section-link">How to Use</a></li>
+                                            <li><a href="index.html#price" class="section-link">Price</a></li>
+                                            <li><a href="calculator.html" class="section-link">Calculator</a></li>
+                                            <li><a href="index.html#referral" class="section-link">Referral</a></li>
+                                            <li><a href="faq.html" class="section-link">FAQ</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="header-action">
+                                        <ul class="list-wrap">
+                                            <li class="header-login"><a href="#" data-toggle="modal" data-target="#loginModal">Login</a></li>
+                                            <li class="header-login">
+                                            <a href="#" data-toggle="modal" data-target="#registerModal" 
+                                            style="background: linear-gradient(90deg, #229ED9 0%, #1F4AE3 100%);font-weight: 800;"
+                                            >Register</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mobile-nav-toggler"><i class="fas fa-bars"></i></div>
+                                </nav>
+                            </div>
+
+                            <!-- Mobile Menu  -->
+                            <div class="mobile-menu">
+                                <nav class="menu-box">
+                                    <div class="close-btn"><i class="fas fa-times"></i></div>
+                                    <div class="nav-logo">
+                                        <a href="index.html"><img src="assets/img/logo/logo.png" alt="Logo"></a>
+                                    </div>
+                                    <div class="menu-outer">
+                                        <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                                    </div>
+                                    <div class="social-links">
+                                        <ul class="clearfix list-wrap">
+                                            <li class="header-login"><a href="#" data-toggle="modal" data-target="#loginModal">Login</a></li>
+                                            <li class="header-login">
+                                            <a href="#" data-toggle="modal" data-target="#registerModal" 
+                                            style="background: linear-gradient(90deg, #229ED9 0%, #1F4AE3 100%);font-weight: 800;"
+                                            >Register</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="menu-backdrop"></div>
+                            <!-- End Mobile Menu -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- offCanvas-menu -->
+
+
+              <!-- Login Modal -->
+              <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="loginModalLabel">Sign in & start mining today</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group position-relative">
+                                    <label for="loginEmail">User Name</label>
+                                    <input type="email" class="form-control custom-input pl-4" id="loginEmail" placeholder="Enter email" required>
+                                    <i class="fas fa-user position-absolute " style="top: 70%; left: 20px; transform: translateY(-50%);color: #20DEB2;"></i>
+                                </div>
+                                <div class="form-group position-relative">
+                                    <label for="loginPassword">Password</label>
+                                    <input type="password" class="form-control custom-input pl-4" id="loginPassword" placeholder="Password" required>
+                                    <i class="fas fa-lock position-absolute " style="top: 70%; left: 20px; transform: translateY(-50%);color: #20DEB2;"></i>
+                                </div>
+                                <a type="submit" class="btn" href="mining/index.html">Log In</a>
+                                <a type="submit" class="google_btn" href="#0"><img src="img/gmail.svg" alt="">Sign up with Google</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Register Modal -->
+            <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="registerModalLabel">Register & start mining today</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group position-relative" >
+                                    <label for="registerName">Full Name</label>
+                                    <input type="text" class="form-control custom-input pl-4" id="registerName" placeholder="Enter full name" required>
+                                    <i class="fas fa-user position-absolute " style="top: 70%; left: 20px; transform: translateY(-50%);color: #20DEB2;"></i>
+                                </div>
+                                <div class="form-group position-relative">
+                                    <label for="registerEmail">Email address</label>
+                                    <input type="email" class="form-control custom-input pl-4" id="registerEmail" placeholder="Enter email" required>
+                                    <i class="fas fa-envelope position-absolute " style="top: 70%; left: 20px; transform: translateY(-50%);color: #20DEB2;"></i>
+                                </div>
+                                <div class="form-group position-relative">
+                                    <label for="registerPassword">Password</label>
+                                    <input type="password" class="form-control custom-input pl-4" id="registerPassword" placeholder="Password" required>
+                                    <i class="fas fa-lock position-absolute " style="top: 70%; left: 20px; transform: translateY(-50%);color: #20DEB2;"></i>
+                                </div>
+                                <a type="submit" class="btn" href="mining/index.html">Register</a>
+                                <a type="submit" class="google_btn" href="#0"><img src="img/gmail.svg" alt="">Sign up with Google</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="offcanvas-overly"></div>
+            <!-- offCanvas-menu-end -->
+
+        </header>
+        <!-- header-area-end -->
+
+        <!-- main-area -->
+        <main>
+
+        
+
+            <!-- features-area -->
+            <section id="feature" class="features-area pt-50 pb-50" style="margin: 100px 0px;background: url(img/stars_bg.png);">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="section-title text-center mb-70">
+                                <h5 class="title">How to Use</h5>
+                                <p>Here we will explain how this process actually works  </p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="steps_block">
+                        <div class="row">
+                            <div class="col-md-3 step_info_block">
+                                <img src="img/step1.png" />
+    
+                                <h4>Register a free account</h4>
+                            </div>
+                            <div class="col-md-3 step_info_block">
+                                <img src="img/step2.png" />
+    
+                                <h4>Make a deposit and purchase a hashrate</h4>
+                            </div>
+                            <div class="col-md-3 step_info_block">
+                                <img src="img/step3.png" />
+    
+                                <h4>Activate mining</h4>
+                            </div>
+                            <div class="col-md-3 step_info_block">
+                                <img src="img/step4.png" />
+    
+                                <h4>Withdraw your profit</h4>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </section>
+            <!-- features-area-end -->
+
+
+
+
+        </main>
+        <!-- main-area-end -->
+
+        <!-- footer-area -->
+        <footer style="border-top: 1px solid #030f3b;">
+            <div class="container">
+                <div class="footer-content my-3 py-3 ">
+                    <a class="navbar-brand" href="index.html"><img src="assets/img/logo/logo.png" alt="logo"></a>
+    
+                    <ul>
+                        <li class="nav-item">
+                            <a class="nav-link  px-3" href="howtouse.html">How to Use</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  px-3" href="index.html#price">Price</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  px-3" href="calculator.html">Calculator</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  px-3" href="index.html#referral">Referral</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  px-3" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  px-3" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+    
+    
+                                        <div class="header_buttons">
+                            <a href="#" class="login_btn" data-bs-toggle="modal" data-bs-target="#loginModal">
+                                Log In
+                            </a>
+                            <a href="#" class="register_btn"  data-bs-toggle="modal" data-bs-target="#registerModal">
+                                Register
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer-area-end -->
+
+
+		<!-- JS here -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+        <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+        <script src="assets/js/jquery.countdown.min.js"></script>
+        <script src="assets/js/jquery.appear.js"></script>
+        <script src="assets/js/slick.min.js"></script>
+        <script src="assets/js/ajax-form.js"></script>
+        <script src="assets/js/jquery.easing.js"></script>
+        <script src="assets/js/chart.min.js"></script>
+        <script src="assets/js/custom-chart.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        
+    </body>
+</html>

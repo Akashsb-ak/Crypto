@@ -1,0 +1,467 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Crypto - Trusted Mining Platform</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+		<!-- CSS here -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <link rel="stylesheet" href="assets/css/default.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+    </head>
+    <body>
+
+        <!-- Preloader -->
+        <div id="preloader">
+            <div class="spinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+            </div>
+        </div>
+        <!-- Preloader -->
+
+		<!-- Scroll-top -->
+        <button class="scroll-top scroll-to-target" data-target="html">
+            <i class="fas fa-angle-up"></i>
+        </button>
+        <!-- Scroll-top-end-->
+
+        <!-- header-area -->
+        <header id="header">
+            <div id="sticky-header" class="menu-area transparent-header">
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="menu-wrap">
+                                <nav class="menu-nav">
+                                    <div class="logo">
+                                        <a href="index.html"><img src="assets/img/logo/logo.png" alt="Logo"></a>
+                                    </div>
+                                    <div class="navbar-wrap main-menu d-none d-lg-flex">
+                                        <ul class="navigation">
+                                            <li><a href="howtouse.html" class="section-link">How to Use</a></li>
+                                            <li><a href="index.html#price" class="section-link">Price</a></li>
+                                            <li><a href="calculator.html" class="section-link">Calculator</a></li>
+                                            <li><a href="index.html#referral" class="section-link">Referral</a></li>
+                                            <li><a href="faq.html" class="section-link">FAQ</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="header-action">
+                                        <ul class="list-wrap">
+                                            <li class="header-login"><a href="#" data-toggle="modal" data-target="#loginModal">Login</a></li>
+                                            <li class="header-login">
+                                            <a href="#" data-toggle="modal" data-target="#registerModal" 
+                                            style="background: linear-gradient(90deg, #229ED9 0%, #1F4AE3 100%);font-weight: 800;"
+                                            >Register</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mobile-nav-toggler"><i class="fas fa-bars"></i></div>
+                                </nav>
+                            </div>
+
+                            <!-- Mobile Menu  -->
+                            <div class="mobile-menu">
+                                <nav class="menu-box">
+                                    <div class="close-btn"><i class="fas fa-times"></i></div>
+                                    <div class="nav-logo">
+                                        <a href="index.html"><img src="assets/img/logo/logo.png" alt="Logo"></a>
+                                    </div>
+                                    <div class="menu-outer">
+                                        <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                                    </div>
+                                    <div class="social-links">
+                                        <ul class="clearfix list-wrap">
+                                            <li class="header-login"><a href="#" data-toggle="modal" data-target="#loginModal">Login</a></li>
+                                            <li class="header-login">
+                                            <a href="#" data-toggle="modal" data-target="#registerModal" 
+                                            style="background: linear-gradient(90deg, #229ED9 0%, #1F4AE3 100%);font-weight: 800;"
+                                            >Register</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="menu-backdrop"></div>
+                            <!-- End Mobile Menu -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- offCanvas-menu -->
+            
+               <!-- Login Modal -->
+               <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="loginModalLabel">Sign in & start mining today</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group position-relative">
+                                    <label for="loginEmail">User Name</label>
+                                    <input type="email" class="form-control custom-input pl-4" id="loginEmail" placeholder="Enter email" required>
+                                    <i class="fas fa-user position-absolute " style="top: 70%; left: 20px; transform: translateY(-50%);color: #20DEB2;"></i>
+                                </div>
+                                <div class="form-group position-relative">
+                                    <label for="loginPassword">Password</label>
+                                    <input type="password" class="form-control custom-input pl-4" id="loginPassword" placeholder="Password" required>
+                                    <i class="fas fa-lock position-absolute " style="top: 70%; left: 20px; transform: translateY(-50%);color: #20DEB2;"></i>
+                                </div>
+                                <a type="submit" class="btn" href="mining/index.html">Log In</a>
+                                <a type="submit" class="google_btn" href="#0"><img src="img/gmail.svg" alt="">Sign up with Google</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Register Modal -->
+            <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="registerModalLabel">Register & start mining today</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group position-relative" >
+                                    <label for="registerName">Full Name</label>
+                                    <input type="text" class="form-control custom-input pl-4" id="registerName" placeholder="Enter full name" required>
+                                    <i class="fas fa-user position-absolute " style="top: 70%; left: 20px; transform: translateY(-50%);color: #20DEB2;"></i>
+                                </div>
+                                <div class="form-group position-relative">
+                                    <label for="registerEmail">Email address</label>
+                                    <input type="email" class="form-control custom-input pl-4" id="registerEmail" placeholder="Enter email" required>
+                                    <i class="fas fa-envelope position-absolute " style="top: 70%; left: 20px; transform: translateY(-50%);color: #20DEB2;"></i>
+                                </div>
+                                <div class="form-group position-relative">
+                                    <label for="registerPassword">Password</label>
+                                    <input type="password" class="form-control custom-input pl-4" id="registerPassword" placeholder="Password" required>
+                                    <i class="fas fa-lock position-absolute " style="top: 70%; left: 20px; transform: translateY(-50%);color: #20DEB2;"></i>
+                                </div>
+                                <a type="submit" class="btn" href="mining/index.html">Register</a>
+                                <a type="submit" class="google_btn" href="#0"><img src="img/gmail.svg" alt="">Sign up with Google</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="offcanvas-overly"></div>
+            <!-- offCanvas-menu-end -->
+
+        </header>
+        <!-- header-area-end -->
+
+        <!-- main-area -->
+        <main>
+
+
+
+             <!-- features-area -->
+             <section id="feature" class="features-area pt-50 pb-50" style="margin: 100px 0px;">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="section-title text-center mb-70">
+                                <h5 class="title">Frequently Asked Questions</h5>
+                                <p>Find an answer to your question in the FAQ or contact our support team.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10 offset-md-1">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <img src="img/question.svg" /> What is Crypto mining?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Crypto is the easiest and most effective way to earn on cryptocurrency mining without buying and maintaining equipment.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <img src="img/question.svg" /> How do I start mining?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>
+                                                    To start, make your deposit (minimum deposit is $1).
+                                                    <br>In your personal account, on the <span>"Wallet"</span> page, choose the cryptocurrency, copy the wallet address and make money transfer.
+                                                </li>
+                                                <li>
+                                                    On the <span>"Buy hashrate"</span> page, choose the currency and enter the investment amount. Next, click on the <span>“Pay Now”</span> button.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            <img src="img/question.svg" /> What daily profit do you offer investors?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Profit depends on the amount of your investment and the number of GH/s, MH/s purchased. The minimum profit is 1.93% per day, the maximum is 2.13%, depending on the investment amount.
+                                        </div>
+                                    </div>
+                                </div>
+        
+        
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree2">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
+                                            <img src="img/question.svg" /> Can I predict my profit?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree2" class="accordion-collapse collapse" aria-labelledby="headingThree2" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Crypto cloud mining has a profitability calculator where you can calculate your approximate profit.
+                                            Your earnings can vary depending on the exchange rate.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree3">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+                                            <img src="img/question.svg" /> What is the minimum and maximum amount to invest?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree3" class="accordion-collapse collapse" aria-labelledby="headingThree3" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            The minimum amount is $1, and the maximum amount is $100 000.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree4">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree4" aria-expanded="false" aria-controls="collapseThree4">
+                                            <img src="img/question.svg" /> What payment systems do you accept for deposits?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree4" class="accordion-collapse collapse" aria-labelledby="headingThree4" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            We accept various payment systems: Tether TRC-20, Bitcoin, Tron, Dogecoin, Litecoin, Ethereum, Binance Coin, Solana and Polygon.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree5">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree5" aria-expanded="false" aria-controls="collapseThree5">
+                                            <img src="img/question.svg" /> How fast are payments made?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree5" class="accordion-collapse collapse" aria-labelledby="headingThree5" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            All payments are processed automatically and instantly by the system. Delays are only possible if the currency transfer networks themselves have problems. Unfortunately, we can’t do anything with these factors.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree611">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree611" aria-expanded="false" aria-controls="collapseThree611">
+                                            <img src="img/question.svg" /> What is the minimum withdrawal amount from the referral program?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree611" class="accordion-collapse collapse" aria-labelledby="headingThree611" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            The minimum withdrawal amount for our partners is 5 USDT.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display: none;" class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree6">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree6" aria-expanded="false" aria-controls="collapseThree6">
+                                            <img src="img/question.svg" /> What is the minimum payout amount?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree6" class="accordion-collapse collapse" aria-labelledby="headingThree6" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Tether TRC-20 = 5 USDT, Bitcoin = 0.0001 BTC, Dogecoin = 50 DOGE, Litecoin = 0.1 LTC, Ethereum = 0.003 ETH, Tron = 40 TRX, Solana = 0.04 SOL, Binance Coin = 0.01 BNB, Polygon = 15 MATIC
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree11">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree11" aria-expanded="false" aria-controls="collapseThree11">
+                                            <img src="img/question.svg" /> How long can I invest and how many deposits can I open at the same time?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree11" class="accordion-collapse collapse" aria-labelledby="headingThree11" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            We highly appreciate your contribution to the development of our company, so all investments in Crypto.net are perpetual. The number of your investments is also unlimited.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree22">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree22" aria-expanded="false" aria-controls="collapseThree22">
+                                            <img src="img/question.svg" /> Where can I find my affiliate link?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree22" class="accordion-collapse collapse" aria-labelledby="headingThree22" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Your affiliate link is located in your account in the <span class="notranslate">"Referral"</span> page
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree33">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree33" aria-expanded="false" aria-controls="collapseThree33">
+                                            <img src="img/question.svg" /> Where can I learn more about the affiliate program?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree33" class="accordion-collapse collapse" aria-labelledby="headingThree33" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            All information about the affiliate program can be found in the <span class="notranslate">"Referral"</span> section.                                    </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree44">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree44" aria-expanded="false" aria-controls="collapseThree44">
+                                            <img src="img/question.svg" /> I didn't get a % of my investors deposit, so what should I do?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree44" class="accordion-collapse collapse" aria-labelledby="headingThree44" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            If you are not credited with a % of your investor's deposit, please contact our support service. After checking the information, we will credit your %.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree55">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree55" aria-expanded="false" aria-controls="collapseThree55">
+                                            <img src="img/question.svg" /> Can I return GH/s, MH/s and withdraw money?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree55" class="accordion-collapse collapse" aria-labelledby="headingThree55" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            GH/s, MH/s is non-refundable. After the purchase, hashrate will always belong to your account.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree12">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree12" aria-expanded="false" aria-controls="collapseThree12">
+                                            <img src="img/question.svg" /> Can I register my second account using my referral link?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree12" class="accordion-collapse collapse" aria-labelledby="headingThree12" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            No. If the system detects multiple accounts linked by a referral link, then all accounts will be blocked without the possibility of recovery.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <!-- features-area-end -->
+
+        
+
+      
+
+
+
+
+        </main>
+        <!-- main-area-end -->
+
+        <!-- footer-area -->
+        <footer style="border-top: 1px solid #030f3b;">
+            <div class="container">
+                <div class="footer-content my-3 py-3 ">
+                    <a class="navbar-brand" href="index.html"><img src="assets/img/logo/logo.png" alt="logo"></a>
+    
+                    <ul>
+                        <li class="nav-item">
+                            <a class="nav-link  px-3" href="howtouse.html">How to Use</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  px-3" href="index.html#price">Price</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  px-3" href="calculator.html">Calculator</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  px-3" href="index.html#referral">Referral</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  px-3" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  px-3" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+    
+    
+                                        <div class="header_buttons">
+                            <a href="#" class="login_btn" data-bs-toggle="modal" data-bs-target="#loginModal">
+                                Log In
+                            </a>
+                            <a href="#" class="register_btn"  data-bs-toggle="modal" data-bs-target="#registerModal">
+                                Register
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer-area-end -->
+
+
+
+  
+
+		<!-- JS here -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+        <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.countdown.min.js"></script>
+        <script src="assets/js/jquery.appear.js"></script>
+        <script src="assets/js/slick.min.js"></script>
+        <script src="assets/js/ajax-form.js"></script>
+        <script src="assets/js/jquery.easing.js"></script>
+        <script src="assets/js/chart.min.js"></script>
+        <script src="assets/js/custom-chart.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

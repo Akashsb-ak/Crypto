@@ -1,0 +1,408 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Crypto - Trusted Mining Platform</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+		<!-- CSS here -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <link rel="stylesheet" href="assets/css/default.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+    </head>
+    <body>
+
+        <!-- Preloader -->
+        <div id="preloader">
+            <div class="spinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+            </div>
+        </div>
+        <!-- Preloader -->
+
+		<!-- Scroll-top -->
+        <button class="scroll-top scroll-to-target" data-target="html">
+            <i class="fas fa-angle-up"></i>
+        </button>
+        <!-- Scroll-top-end-->
+
+        <!-- header-area -->
+        <header id="header">
+            <div id="sticky-header" class="menu-area transparent-header">
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="menu-wrap">
+                                <nav class="menu-nav">
+                                    <div class="logo">
+                                        <a href="index.html"><img src="assets/img/logo/logo.png" alt="Logo"></a>
+                                    </div>
+                                    <div class="navbar-wrap main-menu d-none d-lg-flex">
+                                        <ul class="navigation">
+                                            <li><a href="howtouse.html" class="section-link">How to Use</a></li>
+                                            <li><a href="index.html#price" class="section-link">Price</a></li>
+                                            <li><a href="calculator.html" class="section-link">Calculator</a></li>
+                                            <li><a href="index.html#referral" class="section-link">Referral</a></li>
+                                            <li><a href="faq.html" class="section-link">FAQ</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="header-action">
+                                        <ul class="list-wrap">
+                                            <li class="header-login"><a href="#" data-toggle="modal" data-target="#loginModal">Login</a></li>
+                                            <li class="header-login">
+                                            <a href="#" data-toggle="modal" data-target="#registerModal" 
+                                            style="background: linear-gradient(90deg, #229ED9 0%, #1F4AE3 100%);font-weight: 800;"
+                                            >Register</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mobile-nav-toggler"><i class="fas fa-bars"></i></div>
+                                </nav>
+                            </div>
+
+                            <!-- Mobile Menu  -->
+                            <div class="mobile-menu">
+                                <nav class="menu-box">
+                                    <div class="close-btn"><i class="fas fa-times"></i></div>
+                                    <div class="nav-logo">
+                                        <a href="index.html"><img src="assets/img/logo/logo.png" alt="Logo"></a>
+                                    </div>
+                                    <div class="menu-outer">
+                                        <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                                    </div>
+                                    <div class="social-links">
+                                        <ul class="clearfix list-wrap">
+                                            <li class="header-login"><a href="#" data-toggle="modal" data-target="#loginModal">Login</a></li>
+                                            <li class="header-login">
+                                            <a href="#" data-toggle="modal" data-target="#registerModal" 
+                                            style="background: linear-gradient(90deg, #229ED9 0%, #1F4AE3 100%);font-weight: 800;"
+                                            >Register</a></li>
+                                        </ul>
+                                    </div>
+                                
+                                </nav>
+                            </div>
+                            <div class="menu-backdrop"></div>
+                            <!-- End Mobile Menu -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- offCanvas-menu -->
+
+               <!-- Login Modal -->
+               <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="loginModalLabel">Sign in & start mining today</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group position-relative">
+                                    <label for="loginEmail">User Name</label>
+                                    <input type="email" class="form-control custom-input pl-4" id="loginEmail" placeholder="Enter email" required>
+                                    <i class="fas fa-user position-absolute " style="top: 70%; left: 20px; transform: translateY(-50%);color: #20DEB2;"></i>
+                                </div>
+                                <div class="form-group position-relative">
+                                    <label for="loginPassword">Password</label>
+                                    <input type="password" class="form-control custom-input pl-4" id="loginPassword" placeholder="Password" required>
+                                    <i class="fas fa-lock position-absolute " style="top: 70%; left: 20px; transform: translateY(-50%);color: #20DEB2;"></i>
+                                </div>
+                                <a type="submit" class="btn" href="mining/index.html">Log In</a>
+                                <a type="submit" class="google_btn" href="#0"><img src="img/gmail.svg" alt="">Sign up with Google</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Register Modal -->
+            <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="registerModalLabel">Register & start mining today</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group position-relative" >
+                                    <label for="registerName">Full Name</label>
+                                    <input type="text" class="form-control custom-input pl-4" id="registerName" placeholder="Enter full name" required>
+                                    <i class="fas fa-user position-absolute " style="top: 70%; left: 20px; transform: translateY(-50%);color: #20DEB2;"></i>
+                                </div>
+                                <div class="form-group position-relative">
+                                    <label for="registerEmail">Email address</label>
+                                    <input type="email" class="form-control custom-input pl-4" id="registerEmail" placeholder="Enter email" required>
+                                    <i class="fas fa-envelope position-absolute " style="top: 70%; left: 20px; transform: translateY(-50%);color: #20DEB2;"></i>
+                                </div>
+                                <div class="form-group position-relative">
+                                    <label for="registerPassword">Password</label>
+                                    <input type="password" class="form-control custom-input pl-4" id="registerPassword" placeholder="Password" required>
+                                    <i class="fas fa-lock position-absolute " style="top: 70%; left: 20px; transform: translateY(-50%);color: #20DEB2;"></i>
+                                </div>
+                                <a type="submit" class="btn" href="mining/index.html">Register</a>
+                                <a type="submit" class="google_btn" href="#0"><img src="img/gmail.svg" alt="">Sign up with Google</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="offcanvas-overly"></div>
+            <!-- offCanvas-menu-end -->
+
+        </header>
+        <!-- header-area-end -->
+
+        <!-- main-area -->
+        <main>
+
+        
+
+            <!-- features-area -->
+            <section id="feature" class="features-area pt-50 pb-50" style="margin: 100px 0px;">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="section-title text-center mb-70">
+                                <h5 class="title">Profitability calculator</h5>
+                                <p>Use the calculator to see how much you could start earning today </p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="col-md-12">
+                        <div class="calc_block">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <label>Select mining currency:</label>
+    
+                                            <select id="select_mining_currency" class="select_invest" translate="no">
+                                                <option value="btc" selected="selected">Bitcoin mining</option>
+                                                <option value="trx" >Tron mining</option>
+                                                <option value="doge" >Dogecoin mining</option>
+                                                <option value="ltc" >Litecoin mining</option>
+                                            </select>
+    
+                                        </div>
+    
+                                        <div class="col-md-12" style="margin-top: 30px;">
+                                            <label>Select investment currency:</label>
+    
+                                            <div class="select_invest_currency" translate="no">
+                                                <select id="select_invest_calc" class="select_invest" translate="no">
+                                                    <option value="btc" >Bitcoin</option>
+                                                    <option value="trx" >Tron</option>
+                                                    <option value="usdt" selected="selected" >Tether TRC20</option>
+                                                    <option value="bnb" >Binance Coin</option>
+                                                    <option value="eth" >Ethereum</option>
+                                                    <option value="doge" >Dogecoin</option>
+                                                    <option value="ltc" >Litecoin</option>
+                                                    <option value="matic">Polygon</option>
+                                                    <option value="sol" >Solana</option>
+                                                </select>
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-md-12" style="margin-top: 30px;">
+                                            <label>Deposit amount:</label>
+    
+                                            <div class="custom_input" translate="no">
+                                                <input id="calc_deposit_amount" class="amount_input" type="text" value="500" placeholder="0.00" autocomplete="off" />
+                                                <span class="amount_symbol_calc">USDT</span>
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-md-12">
+                                            <div class="info_buy">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <circle cx="8" cy="8" r="8" fill="#263671"/>
+                                                    <path d="M8.85535 12H7.14465V6.26676H8.85535V12ZM8 5.6775C7.81132 5.6775 7.64151 5.64035 7.49057 5.56603C7.33962 5.49171 7.22013 5.39084 7.13208 5.26344C7.04403 5.13603 7 4.99447 7 4.83875C7 4.68303 7.04403 4.54147 7.13208 4.41407C7.22013 4.28666 7.33962 4.1858 7.49057 4.11148C7.64151 4.03716 7.81132 4 8 4C8.18868 4 8.35849 4.03716 8.50943 4.11148C8.66457 4.1858 8.78407 4.28666 8.86792 4.41407C8.95597 4.54147 9 4.68303 9 4.83875C9 4.99447 8.95597 5.13603 8.86792 5.26344C8.78407 5.39084 8.66457 5.49171 8.50943 5.56603C8.35849 5.64035 8.18868 5.6775 8 5.6775Z" fill="#20DEB2"/>
+                                                </svg>
+    
+                                                Buy the hashrate once and you own it forever
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                               <div class="col-md-1 text-center">
+                                <svg class="line_main_vertical" xmlns="http://www.w3.org/2000/svg" width="2" height="355" viewBox="0 0 2 355" fill="none">
+                                    <path d="M1 354.5L1 0.5" stroke="url(#paint0_linear_255_302)" stroke-width="2"/>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_255_302" x1="1" y1="354" x2="-0.16805" y2="0.00385411" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#081237"/>
+                                            <stop offset="0.229036" stop-color="#20DEB2"/>
+                                            <stop offset="0.705383" stop-color="#204FE3"/>
+                                            <stop offset="1" stop-color="#081237"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                               </div>
+
+                              <div class="col-md-5">
+                                <div class="header_calc_right">
+                                    <div class="header_calc_right_block">
+                                        <div class="header_calc_right_block_title">Total hashrate:</div>
+                                        <div class="total_amount_calc" translate="no"><span class="total_hash">17822 </span> <text class="hashrate_type">GH/s </text> </div>
+                                        <div class="total_amount_calc_btc" translate="no">~ 0.00534521 BTC <span class="total_hash_btc"></span> BTC</div>
+                                    </div>
+                                    <div class="header_calc_right_block">
+                                        <div class="header_calc_right_block_title">Monthly profit:</div>
+                                        <div class="header_calc_right_block_percent" translate="no"><text class="monthly_percent"></text>64%</div>
+                                    </div>
+                                    <div class="header_calc_right_block">
+                                        <div class="header_calc_right_block_title">Daily profit:</div>
+                                        <div class="header_calc_right_block_percent" translate="no"><text class="daily_percent"></text>2.13%</div>
+                                    </div>
+                                </div>
+                                
+                                <svg style="margin-top: 10px;" class="line_calc_horizontal" xmlns="http://www.w3.org/2000/svg" width="618" height="2" viewBox="0 0 618 2" fill="none">
+                                    <path d="M0 1L618 1" stroke="url(#paint0_linear_255_301)" stroke-width="2"/>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_255_301" x1="9.00662" y1="1.99998" x2="617.99" y2="-1.00941" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#000518"/>
+                                            <stop offset="0.229036" stop-color="#20DEB2"/>
+                                            <stop offset="0.705383" stop-color="#204FE3"/>
+                                            <stop offset="1" stop-color="#000518"/>
+                                            <stop offset="1" stop-color="#081237"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+
+                                <div class="header_calc_center">
+
+
+                                    <div class="header_calc_center_block">
+                                        <div class="header_calc_center_block_title">
+                                            <text class="name_crypto">Bitcoin</text> mined per hour:
+                                        </div>
+                                        <div class="crypto_mine_per_hour crypto_mine_per" translate="no">
+                                            <span class="per_hour_res" translate="no"> 0.00000475 BTC
+                                            </span> <div class="symbol_calc_mine"></div>
+                                        </div>
+                                    </div>
+                                    <div class="header_calc_center_block">
+                                        <div class="header_calc_center_block_title">
+                                            <text class="name_crypto">Bitcoin</text> mined per day:
+                                        </div>
+                                        <div class="crypto_mine_per_day crypto_mine_per" translate="no">
+                                            <span class="per_day_res" translate="no">0.00000475 BTC</span> <div class="symbol_calc_mine"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="monthly_profit_result">
+                                    <div class="monthly_usd_calc_profit">
+                                        $<span class="dollar_res" translate="no">958.15</span>
+                                    </div>
+
+                                    <div class="monthly_usd_crypto_name">
+                                        <span class="name_crypto" translate="no">Bitcoin</span> mining profit in 90 days
+                                    </div>
+                                </div>
+
+                                <div class="load_calc">
+                                    <div class="loader_btn"></div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </section>
+            <!-- features-area-end -->
+
+
+
+
+        </main>
+        <!-- main-area-end -->
+
+        <!-- footer-area -->
+        <footer style="border-top: 1px solid #030f3b;">
+            <div class="container">
+                <div class="footer-content my-3 py-3 ">
+                    <a class="navbar-brand" href="index.html"><img src="assets/img/logo/logo.png" alt="logo"></a>
+    
+                    <ul>
+                        <li class="nav-item">
+                            <a class="nav-link  px-3" href="howtouse.html">How to Use</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  px-3" href="index.html#price">Price</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  px-3" href="calculator.html">Calculator</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  px-3" href="index.html#referral">Referral</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  px-3" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  px-3" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+    
+    
+                                        <div class="header_buttons">
+                            <a href="#" class="login_btn" data-bs-toggle="modal" data-bs-target="#loginModal">
+                                Log In
+                            </a>
+                            <a href="#" class="register_btn"  data-bs-toggle="modal" data-bs-target="#registerModal">
+                                Register
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer-area-end -->
+
+
+
+  
+
+		<!-- JS here -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+        <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+        <script src="assets/js/jquery.countdown.min.js"></script>
+        <script src="assets/js/jquery.appear.js"></script>
+        <script src="assets/js/slick.min.js"></script>
+        <script src="assets/js/ajax-form.js"></script>
+        <script src="assets/js/jquery.easing.js"></script>
+        <script src="assets/js/chart.min.js"></script>
+        <script src="assets/js/custom-chart.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        
+    </body>
+</html>
